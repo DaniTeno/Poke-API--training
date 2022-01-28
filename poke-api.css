@@ -1,0 +1,230 @@
+body{
+     box-sizing: border-box;
+     margin: 0;
+     font-size: 1rem;
+     font-family: sans-serif; 
+}
+
+*, *::after, *::before{
+     text-decoration: none;
+}
+
+.header{
+     background-color: rgb(226, 44, 44);
+     padding: 9px 0;
+     height: 20vh;
+}
+
+.title{
+     text-align: center;
+     margin: 0;
+     padding: .5rem;
+}
+
+#poke-title{
+     
+     height: 10vh;
+     padding: .4rem;
+     transition: .5s ease;
+     border-radius: 1.2rem;
+}
+
+#poke-title:hover{
+     background-color: rgba(255, 255, 255, 0.507);
+}
+
+.menu{
+     display: flex;
+     width: 100%;
+     justify-content: space-evenly;
+     font-size: 1.3rem;
+     font-weight: bold;
+}
+
+.menu a{
+     border-top: 2px solid rgba(17, 17, 17, 0.24);
+     border-bottom: 2px solid rgba(17, 17, 17, 0.24);
+     padding: .3rem .6rem;
+     color: #fff;
+     transition: .2s ease-out;
+}
+
+.menu-btn{
+     /* necesito agregar estilos al input */
+}
+
+.menu a:hover{
+     color: rgb(86, 86, 138);
+     background-color: rgba(253, 253, 253, 0.842);
+     border-radius: 5rem;
+}
+
+#root{
+     display: flex;
+     flex-direction: column;
+}
+
+.main-article{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.main-aside{
+     display: flex;
+     flex-grow: 1;
+     background-color: rgb(196, 196, 196);
+     border-left: solid rgb(247, 79, 79) 2px;
+     min-width: 200px;
+     height: 101%;
+}
+
+.main-section{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+     gap: 4px;
+     width: 100vw;
+}
+
+.poke-card{
+     background-color: rgb(221, 223, 230);
+     width: 100%;
+     height: min-content;
+     margin: 0;
+     text-align: center;
+     transition: .1s ease-in-out;
+     padding-bottom: 5px;
+}
+
+.poke-card:hover{
+     background-color: rgb(128, 190, 240);
+}
+
+.poke-card img{
+     display: block;
+     margin: auto;
+     height: 100px;
+}
+
+.poke-card-info{
+     margin: auto;
+}
+
+.poke-card-info h2{
+     text-transform: capitalize;
+     margin: auto;
+     color: rgb(61, 17, 23);
+}
+
+.poke-card-info p{
+     margin: 0;
+     padding: .1rem;
+     color: rgb(48, 48, 48);
+     font-size: .9rem;
+}
+
+.error p{
+     text-align: center;
+     background-color: rgb(116, 44, 126);
+     padding: 4rem;
+     font-size: 2rem;
+     color: #fff;
+     box-shadow: 1px 3px 4px #111;
+}
+
+.regions{
+     display: block;
+     background-color: rgb(47, 78, 45);
+}
+
+.region-card{
+     background-color: rgba(254, 255, 217, 0.986);
+     transition: .3s ease;
+     margin-top: .5rem;
+}
+
+.region-card-info{
+     display: flex;
+     color: rgb(34, 34, 34);
+     font-size: .9rem;
+     transition: .1s ease-in-out;
+}
+
+.region-span{
+     display: flex;
+     text-transform: uppercase;
+     text-align: center;
+     margin: 0;
+}
+
+.region-span h2{
+     flex-grow: 1;
+     margin: 0;
+     padding: .5rem;
+}
+
+.region-span h3{
+     padding: 0 .8rem;
+     font-weight: 100;
+     margin: auto;
+     font-size: .8rem;
+     text-transform: capitalize;
+}
+
+
+.region-card:hover{
+     background-color: rgba(21, 17, 255, 0.589);
+     color: #fff;
+}
+
+.hidden{
+     display: none;
+}
+
+#region-versions{
+     display: block;
+     border-top: 1px solid #999;
+     padding: .7rem;
+     font-family: monospace;
+     /* margin: 0 .9rem; */
+     color: rgba(0, 54, 58, 0.897);
+     text-align: right;
+     font-size: .8rem;
+     background-color: rgba(253, 231, 223, 0.671)
+}
+
+#region-locations{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+     gap: 5px 10px;
+     width: 100%;
+     background-color: rgba(253, 231, 223, 0.671);
+     padding-bottom: 1rem;
+}
+
+.a-region{
+     border-radius: 5px;
+     border-top: 1px solid rgba(119, 119, 119, 0.288);
+     border-bottom: 1px solid #777;
+     border-right: 1px solid #777;
+     transition: .2s ease-out;
+     color: rgb(70, 70, 70);
+     text-align: center;
+     font-size: 1.2rem;
+     padding: .5rem .8rem;
+     background-color: rgb(255, 255, 255);
+}
+
+.a-region:hover{
+     background-color: rgb(78, 135, 219);
+}
+
+.active{
+     background-color: rgba(21, 17, 255, 0.589);
+     color: #fff;
+}
+
+/* .search-div{
+     background-color: rgb(123, 93, 255);
+     height: 8rem;
+     margin: 1rem 0;
+} */
